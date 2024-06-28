@@ -3,8 +3,14 @@ package org.launchcode.Walkabout_Backend.mapper;
 import org.launchcode.Walkabout_Backend.dto.UserDto;
 import org.launchcode.Walkabout_Backend.entity.User;
 
-public interface UserMapper {
-//public class UserMapper {
+//public interface UserMapper {
+//
+//    UserDto toUserDto(User user);
+//
+//}
+
+
+public class UserMapper {
 
     public static UserDto mapToUserDto (User user){
         return new UserDto(
