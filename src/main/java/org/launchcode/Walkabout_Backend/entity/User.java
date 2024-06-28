@@ -1,15 +1,13 @@
 package org.launchcode.Walkabout_Backend.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
+@Data
 @Getter
 @Setter
 @NoArgsConstructor
-@AllArgsConstructor
+//@AllArgsConstructor
 @Entity
 @Table(name = "users")
 public class User {
@@ -30,4 +28,29 @@ public class User {
     @Column(name = "email")
     private String email;
 
+
+
+    public User(Long id, String firstName, String lastName, String username, String email) {
+    }
+
+
+//    public Long getId() {
+//        return id;
+//    }
+//
+//    public String getFirstName() {
+//        return firstName;
+//    }
+//
+//    public String getLastName() {
+//        return lastName;
+//    }
+//
+//    public String getUsername() {
+//        return username;
+//    }
+//
+//    public String getEmail() {
+//        return email;
+//    }
 }

@@ -3,7 +3,8 @@ package org.launchcode.Walkabout_Backend.mapper;
 import org.launchcode.Walkabout_Backend.dto.UserDto;
 import org.launchcode.Walkabout_Backend.entity.User;
 
-public class UserMapper {
+public interface UserMapper {
+//public class UserMapper {
 
     public static UserDto mapToUserDto (User user){
         return new UserDto(
@@ -26,3 +27,5 @@ public class UserMapper {
     }
 
 }
+
+//TODO: If continue to get errors, refer to User entity and consider removing mapper
