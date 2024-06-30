@@ -3,12 +3,12 @@ package org.launchcode.Walkabout_Backend.entity;
 import jakarta.persistence.*;
 import lombok.*;
 
-@Data
-@Getter
-@Setter
-@NoArgsConstructor
-@AllArgsConstructor
 @Entity
+@Data
+//@Getter
+//@Setter
+//@NoArgsConstructor
+//@AllArgsConstructor
 @Table(name = "users")
 public class User {
 
@@ -22,8 +22,12 @@ public class User {
     @Column(name = "last_name")
     private String lastName;
 
-    @Column(name = "username", nullable = false, unique = true)
+//    @Column(name = "username", nullable = false, unique = true)
+    @Column(name = "username")
     private String username;
+
+    @Column(name = "password")
+    private String password;
 
     @Column(name = "email")
     private String email;
