@@ -4,8 +4,6 @@ import lombok.RequiredArgsConstructor;
 import org.launchcode.Walkabout_Backend.entity.User;
 import org.launchcode.Walkabout_Backend.repository.UserRepository;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.PathVariable;
-
 import javax.persistence.EntityNotFoundException;
 import java.util.List;
 
@@ -26,10 +24,12 @@ public class UserService {
 
     //delete user
     public void deleteUser(Long id){
-        if (!userRepository.existsById(id)) {
+
+            //first check existence of user
+        if (!userRepository.existsById(id)){
             throw new EntityNotFoundException("User with ID " + id + " not found");
         }
         userRepository.deleteById(id);
-    }
 
+    }
 }

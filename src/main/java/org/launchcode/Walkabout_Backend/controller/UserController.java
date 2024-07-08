@@ -6,7 +6,6 @@ import org.launchcode.Walkabout_Backend.service.UserService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
 import javax.persistence.EntityNotFoundException;
 import java.util.List;
 
@@ -30,12 +29,13 @@ public  class UserController {
     }
     //used Postman to check Get All Users API http://localhost:8080/api/users
 
+
     @DeleteMapping("/user/{id}")
-    public ResponseEntity<?> deleteUser(@PathVariable Long id){
+    public ResponseEntity<?> deleteUser(@PathVariable ("id")Long id){
         try {
             userService.deleteUser(id);
-            return new ResponseEntity<>("User with ID " + id + " successfully deleted", HttpStatus.OK);
-        }catch (EntityNotFoundException e){
+            return new ResponseEntity<>("User with ID " + id + " deleted successfully", HttpStatus.OK);
+        } catch (EntityNotFoundException e){
             return new ResponseEntity<>(e.getMessage(), HttpStatus.NOT_FOUND);
         }
     }
