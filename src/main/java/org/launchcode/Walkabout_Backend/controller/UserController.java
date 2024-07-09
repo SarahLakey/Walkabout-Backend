@@ -48,4 +48,12 @@ public  class UserController {
         return  ResponseEntity.ok(user);
     }
 
+    @PatchMapping("/user/{id}")
+    public ResponseEntity<?> updateUser(@PathVariable("id") Long id,
+    @RequestBody User user){
+        User updateUser = userService.updateUser(id,user);
+
+        if (updateUser ==null) return  ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
+        return ResponseEntity.ok(updateUser);
+    }
 }

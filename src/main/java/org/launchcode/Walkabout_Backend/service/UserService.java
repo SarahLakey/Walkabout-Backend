@@ -6,6 +6,7 @@ import org.launchcode.Walkabout_Backend.repository.UserRepository;
 import org.springframework.stereotype.Service;
 import javax.persistence.EntityNotFoundException;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
@@ -40,4 +41,20 @@ public class UserService {
                 //since the id may not exist/be null - need or else
     }
 
+    public User updateUser(Long id, User user){
+        Optional<User> optionalUser = userRepository.findById(id);
+
+        if (optionalUser.isPresent()){
+            User existingUser = optionalUser.get();
+
+            existingUser.setFirstName(user.getFirstName());
+            existingUser.setLastName(user.getLastName());
+            existingUser.setEmail(user.getEmail());
+            existingUser.setUsername(user.getUsername());
+            existingUser.setPassword(user.getPassword());
+
+            return  userRepository.save(existingUser);
+        }
+        return null;
+    }
 }
