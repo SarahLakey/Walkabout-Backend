@@ -32,4 +32,12 @@ public class UserService {
         userRepository.deleteById(id);
 
     }
+
+    //Creating Get User by ID
+    public User getUserById(Long id) {
+        return userRepository.findById(id).orElse(null);
+                //findById already exists through JPA
+                //since the id may not exist/be null - need or else
+    }
+
 }
