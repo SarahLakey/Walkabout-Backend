@@ -6,12 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="0594a115-3ddf-431a-aed7-db48f3b27c32" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/launchcode/Walkabout_Backend/controller/StepController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/org/launchcode/Walkabout_Backend/controller/StepController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/launchcode/Walkabout_Backend/entity/Step.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/org/launchcode/Walkabout_Backend/entity/Step.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/launchcode/Walkabout_Backend/service/StepService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/org/launchcode/Walkabout_Backend/service/StepService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/Walkabout_Backend/controller/StepController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/Walkabout_Backend/controller/StepController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/Walkabout_Backend/entity/Step.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/Walkabout_Backend/entity/Step.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/Walkabout_Backend/service/StepService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/Walkabout_Backend/service/StepService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/Walkabout_Backend/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/Walkabout_Backend/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/Walkabout_Backend/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/Walkabout_Backend/service/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -52,10 +52,11 @@ public class StepController {
     @PatchMapping("/steps/{id}")
     public ResponseEntity<?> updateStep(@PathVariable("id") Long id,
                                         @RequestBody Step step){
-        Step updateStep = stepService.updateStep(id,step);
+        Step updateStep = stepService.updateStep(id, step);
 
-        if (updateStep ==null) return  ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
+        if (updateStep == null) return ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
         return ResponseEntity.ok(updateStep);
     }
+
 
 }
