@@ -13,7 +13,7 @@ public class StepController {
 
     private final StepService stepService;
 
-    @PostMapping("/step")
+    @PostMapping("/stepCounter")
     public Step postStep(@RequestBody Step step){
         return stepService.postStep(step);
     }
