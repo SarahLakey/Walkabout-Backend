@@ -49,7 +49,7 @@ public class StepController {
         return  ResponseEntity.ok(step);
     }
 
-    @PatchMapping("/steps/{id}")
+    @PatchMapping("/stepCounter/{id}")
     public ResponseEntity<?> updateStep(@PathVariable("id") Long id,
                                         @RequestBody Step step){
         Step updateStep = stepService.updateStep(id, step);
