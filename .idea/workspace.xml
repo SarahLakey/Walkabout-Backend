@@ -5,18 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0594a115-3ddf-431a-aed7-db48f3b27c32" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/Walkabout_Backend/controller/AuthenticationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/Walkabout_Backend/security/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/Walkabout_Backend/security/securityFilterChain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/home_admin.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/home_user.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.8/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.8/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.8/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/Walkabout_Backend/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/Walkabout_Backend/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/home.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
