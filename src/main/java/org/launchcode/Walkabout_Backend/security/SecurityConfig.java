@@ -4,6 +4,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.config.annotation.web.configurers.AbstractAuthenticationFilterConfigurer;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -32,6 +33,7 @@ public class SecurityConfig {
 
             registry.anyRequest().authenticated();
         })
+        .formLogin(AbstractAuthenticationFilterConfigurer::permitAll)
         .build();
     }
 
@@ -46,7 +48,6 @@ public class SecurityConfig {
                 .build();
         UserDetails adminUser = User.builder()
                 .username("admin")
-//              **don't want to do plain text password so it can't be reverse engineered-- encode instead
                 .password("$2a$12$rqa1hroPau1OvOvn97kqZuuJQnmAEp40nvHSEm2pOklqMeLxF4dlG")
                 .roles("ADMIN", "USER")
                 .build();

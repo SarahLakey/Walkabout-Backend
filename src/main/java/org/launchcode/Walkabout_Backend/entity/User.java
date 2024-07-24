@@ -5,6 +5,7 @@ import lombok.*;
 
 @Entity
 @Data
+@Builder
 //@Getter
 //@Setter
 //@NoArgsConstructor
@@ -34,6 +35,10 @@ public class User {
 
     @Column(name = "email")
     private String email;
+
+    @Column
+//    private String role; //ADMIN,USER
+    private String[] role; //ADMIN,USER
 
 
 }
