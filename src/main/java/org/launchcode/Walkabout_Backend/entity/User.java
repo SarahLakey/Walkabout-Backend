@@ -3,9 +3,11 @@ package org.launchcode.Walkabout_Backend.entity;
 import jakarta.persistence.*;
 import lombok.*;
 
+@Setter
+@Getter
 @Entity
 @Data
-@Builder
+//@Builder
 //@Getter
 //@Setter
 //@NoArgsConstructor
@@ -13,8 +15,9 @@ import lombok.*;
 @Table(name = "users")
 public class User {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id //primary key
+    @GeneratedValue(strategy = GenerationType.IDENTITY) //auto increment
+    @Column(name = "id")
     private Long id;
 
     @Column(name = "first_name")
@@ -36,9 +39,11 @@ public class User {
     @Column(name = "email")
     private String email;
 
-    @Column
+    @Enumerated(value = EnumType.STRING)
+    Role role;
+
+//    @Column
 //    private String role; //ADMIN,USER
-    private String[] role; //ADMIN,USER
 
 
 }

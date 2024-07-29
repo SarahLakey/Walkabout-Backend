@@ -10,5 +10,5 @@ import java.util.Optional;
 public interface UserRepository extends JpaRepository<User, Long> {
 
     //user optional since sometimes username exists and sometimes it does not
-    Optional<User> findByUsername(String username);
+    Optional<org.springframework.security.core.userdetails.User> findByUsername(String username);
 }

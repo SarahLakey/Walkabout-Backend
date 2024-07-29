@@ -15,36 +15,10 @@ import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
-public class UserService implements UserDetailsService {
+public class UserService  {
 
     @Autowired
-    private UserRepository userRepository;
-
-    @Override
-    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException{
-        Optional<User> user = userRepository.findByUsername(username);
-        if (user.isPresent()){
-            var userObj = user.get();
-            return User.builder()
-                    .username(userObj.getUsername())
-                    .password(userObj.getPassword())
-                    .roles(getRoles(userObj))
-                    .build();
-
-        } else {
-            throw new UsernameNotFoundException(username);
-        }
-    }
-
-//    private String[] getRoles(User user) {
-    private List<String> getRoles(User user) {
-        if (user.getRole() == null){
-            return new String[]{"USER"};
-
-        }
-            return user.getRole().split(",");
-    }
-
+    private final UserRepository userRepository;
 
     public User postUser(User user){
         return userRepository.save(user);
