@@ -7,11 +7,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-//@RestController
+@RestController
 //@RequestMapping("/api")
 //@RequiredArgsConstructor
 //@CrossOrigin("*") //allows backend to communicate with frontend
-@Controller
+//@Controller
 public class AuthenticationController {
 
     @GetMapping("/home")
